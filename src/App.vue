@@ -5,6 +5,7 @@ import BlochSphere from './components/BlochSphere.vue'
 import Cityscape from './components/Cityscape.vue'
 import PlotlyChart from './components/PlotlyChart.vue'
 import Cover from './components/Cover.vue'
+import References from './components/References.vue'
 
 // ---------------- parámetros del procesador ----------------
 const p = reactive({ logT1: Math.log10(2), logT2: Math.log10(1.5), ideal: false, deltaMHz: 0, areaErrPct: 0, t1q: 20, method: 'RK4', h: 0.25 })
@@ -292,6 +293,8 @@ const e4 = computed(() => {
       </div>
     </section>
   </main>
+
+  <References />
 
   <footer>Métodos Numéricos · Ingeniería de Sistemas y Computación · Basado en DiCarlo et al., Nature 460, 240 (2009)</footer>
 </template>

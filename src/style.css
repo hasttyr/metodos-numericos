@@ -123,3 +123,15 @@ footer { color: var(--muted); font-size: 13px; text-align: center; padding: 8px 
   .arc-tr { top: -200px; right: -200px; }
   .arc-bl { bottom: -200px; left: -200px; }
 }
+
+/* ---------------- referencias ---------------- */
+.refs { padding: 0 24px 24px; }
+.refs ol { margin: 0; padding-left: 22px; display: grid; gap: 14px; }
+.refs li::marker { font-family: var(--mono); color: var(--brick); font-weight: 700; }
+.refs p { margin: 0; }
+.refs .cite { font-size: 15px; }
+.refs .uso { color: var(--muted); font-size: 13px; font-style: italic; }
+.refs .links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 2px; }
+.refs a { font-family: var(--mono); font-size: 12px; color: var(--teal); text-decoration: none; border-bottom: 1px solid var(--line); }
+.refs a:hover { color: var(--brick); border-bottom-color: var(--brick); }
+@media (max-width: 640px) { .refs { padding: 0 16px 24px; } }

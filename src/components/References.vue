@@ -1,5 +1,5 @@
 <script setup>
-// Referencias de la propuesta. DOI y arXiv verificados con Crossref y la API de arXiv.
+// Referencias de la propuesta y de los métodos numéricos.
 const refs = [
   { autores: 'DiCarlo, L. et al.', anio: 2009, titulo: 'Demonstration of two-qubit algorithms with a superconducting quantum processor', fuente: 'Nature, 460, 240–244', doi: '10.1038/nature08121', arxiv: '0903.2030', uso: 'Experimento que se reproduce: el procesador de 2 qubits y Grover.' },
   { autores: 'Lindblad, G.', anio: 1976, titulo: 'On the generators of quantum dynamical semigroups', fuente: 'Communications in Mathematical Physics, 48, 119–130', doi: '10.1007/BF01608499', uso: 'Ecuación maestra que gobierna ρ(t).' },
@@ -11,6 +11,14 @@ const refs = [
   { autores: 'Blanes, S., Casas, F., Oteo, J. A., & Ros, J.', anio: 2009, titulo: 'The Magnus expansion and some of its applications', fuente: 'Physics Reports, 470, 151–238', doi: '10.1016/j.physrep.2008.11.001', arxiv: '0810.5488', uso: 'Integrador de Magnus de 4.º orden.' },
   { autores: 'Johansson, J. R., Nation, P. D., & Nori, F.', anio: 2012, titulo: 'QuTiP: An open-source Python framework for the dynamics of open quantum systems', fuente: 'Computer Physics Communications, 183, 1760–1772', doi: '10.1016/j.cpc.2012.02.021', arxiv: '1110.0573', uso: 'Librería de referencia para validar el solver (E7).' },
   { autores: 'Nielsen, M. A., & Chuang, I. L.', anio: 2010, titulo: 'Quantum Computation and Quantum Information (10th Anniversary ed.)', fuente: 'Cambridge University Press', doi: '10.1017/CBO9780511976667', uso: 'Teoría de Grover (cap. 6) y de ruido cuántico (cap. 8).' },
+  { autores: 'Iserles, A., & Nørsett, S. P.', anio: 1999, titulo: 'On the solution of linear differential equations in Lie groups', fuente: 'Phil. Trans. R. Soc. A, 357, 983–1019', doi: '10.1098/rsta.1999.0362', uso: 'Integradores de Magnus con cuadratura de Gauss.' },
+  { autores: 'Dormand, J. R., & Prince, P. J.', anio: 1980, titulo: 'A family of embedded Runge-Kutta formulae', fuente: 'Journal of Computational and Applied Mathematics, 6, 19–26', doi: '10.1016/0771-050X(80)90013-3', uso: 'Par encajado 5(4) del método RK45 adaptativo.' },
+  { autores: 'Moler, C., & Van Loan, C.', anio: 2003, titulo: 'Nineteen dubious ways to compute the exponential of a matrix, twenty-five years later', fuente: 'SIAM Review, 45, 3–49', doi: '10.1137/S00361445024180', uso: 'Padé con scaling and squaring para e^Ω.' },
+  { autores: 'Hairer, E., Nørsett, S. P., & Wanner, G.', anio: 1993, titulo: 'Solving Ordinary Differential Equations I: Nonstiff Problems (2nd ed.)', fuente: 'Springer', doi: '10.1007/978-3-540-78862-1', uso: 'Orden, condiciones de Butcher, error global y control de paso.' },
+  { autores: 'Hairer, E., & Wanner, G.', anio: 1996, titulo: 'Solving Ordinary Differential Equations II: Stiff and Differential-Algebraic Problems (2nd ed.)', fuente: 'Springer', doi: '10.1007/978-3-642-05221-7', uso: 'A-estabilidad, L-estabilidad y rigidez.' },
+  { autores: 'Butcher, J. C.', anio: 2016, titulo: 'Numerical Methods for Ordinary Differential Equations (3rd ed.)', fuente: 'Wiley', doi: '10.1002/9781119121534', uso: 'Tablas de Butcher y árboles de las condiciones de orden.' },
+  { autores: 'Golub, G. H., & Welsch, J. H.', anio: 1969, titulo: 'Calculation of Gauss quadrature rules', fuente: 'Mathematics of Computation, 23, 221–230', doi: '10.1090/S0025-5718-69-99647-1', uso: 'Nodos de Gauss-Legendre (los mismos de Magnus).' },
+  { autores: 'Higham, N. J.', anio: 2002, titulo: 'Accuracy and Stability of Numerical Algorithms (2nd ed.)', fuente: 'SIAM', doi: '10.1137/1.9780898718027', uso: 'Redondeo, pivoteo parcial y estabilidad de la LU.' },
 ]
 </script>
 

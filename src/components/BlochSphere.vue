@@ -19,7 +19,7 @@ function circle(rotate) {
 }
 
 function buildTrail() {
-  if (trail) { S.scene.remove(trail); trail.geometry.dispose() }
+  if (trail) { S.scene.remove(trail); trail.geometry.dispose(); trail.material.dispose() }
   trail = new THREE.Line(
     new THREE.BufferGeometry().setFromPoints(props.traj.map((v) => toThree(v).clampLength(0, 1.4))),
     new THREE.LineBasicMaterial({ color: props.color, transparent: true, opacity: 0.55 }),

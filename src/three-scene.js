@@ -32,7 +32,11 @@ export function createScene(container, cameraPos = [2.4, 1.7, 2.4]) {
 
   return {
     scene, render,
-    dispose() { ro.disconnect(); controls.dispose(); renderer.dispose(); renderer.domElement.remove() },
+    dispose() {
+      ro.disconnect(); controls.dispose()
+      scene.traverse((o) => { o.geometry?.dispose(); o.material?.map?.dispose(); o.material?.dispose() })
+      renderer.dispose(); renderer.domElement.remove()
+    },
   }
 }
 

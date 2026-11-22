@@ -114,3 +114,12 @@ ul.explain { padding-left: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .progress div { transition: none; } }
 .banner { margin: 12px 24px; padding: 10px 14px; background: var(--card); border: 2px solid var(--brick); }
+
+/* ¿para qué sirve? */
+.usos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.uso { display: block; color: var(--ink); text-decoration: none; position: relative; padding-top: 18px; transition: transform 0.1s, box-shadow 0.1s; }
+.uso:hover, .uso:focus-visible { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--ink); }
+.uso .un { font: 700 28px var(--mono); color: var(--brick); }
+.uso h3 { font-size: 18px; font-weight: 800; margin: 4px 0 6px; }
+.uso .dato { font: 700 13px var(--mono); color: var(--olive); background: var(--paper); padding: 6px 8px; margin-top: 10px; }
+@media (max-width: 900px) { .usos { grid-template-columns: 1fr; } }

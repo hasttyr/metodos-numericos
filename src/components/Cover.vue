@@ -37,7 +37,7 @@ const integrantes = [
         </div>
       </div>
 
-      <a href="#simulacion" class="cta">Iniciar simulación ↓</a>
+      <a href="#proposito" class="cta">Empezar ↓</a>
     </div>
   </section>
 </template>

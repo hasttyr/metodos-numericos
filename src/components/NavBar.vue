@@ -2,11 +2,11 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const LINKS = [
-  ['simulacion', 'Simulador'], ['modelo', 'Modelo'], ['metodos', 'Métodos'], ['estabilidad', 'Estabilidad'],
+  ['proposito', '¿Para qué?'], ['simulacion', 'Simulador'], ['modelo', 'Modelo'], ['metodos', 'Métodos'], ['estabilidad', 'Estabilidad'],
   ['convergencia', 'Convergencia'], ['eficiencia', 'Eficiencia'], ['fisica', 'Física'], ['validacion', 'Validación'],
   ['ingenieria', 'Ingeniería'], ['preguntas', 'Discusión'], ['referencias', 'Referencias'],
 ]
-const active = ref('simulacion')
+const active = ref('proposito')
 let obs
 onMounted(() => {
   obs = new IntersectionObserver((entries) => {

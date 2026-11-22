@@ -24,8 +24,9 @@ const FAQ = [
 
 <template>
   <section id="preguntas" class="doc">
-    <p class="kicker">10 · Preguntas de sustentación</p>
-    <h2 class="doc-title">Lo que un jurado podría preguntar</h2>
+    <p class="kicker">10 · Discusión</p>
+    <h2 class="doc-title">Preguntas clave sobre los métodos</h2>
+    <p class="lead">Las dudas que aparecen al comparar los seis métodos, respondidas con los resultados del proyecto.</p>
     <div class="faq">
       <details v-for="([q, a], i) in FAQ" :key="i" class="card">
         <summary><span class="qn">{{ String(i + 1).padStart(2, '0') }}</span>{{ q }}</summary>

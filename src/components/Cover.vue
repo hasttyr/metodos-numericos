@@ -4,7 +4,7 @@ const integrantes = [
   'Julian Enrique Rojas Joaqui',
   'Hernan David Rodriguez Blanco',
   'Julian David Martinez Martinez',
-  '', // integrante pendiente: escribir aquí el nombre
+  'Luis Miguel Pérez Coy',
 ]
 </script>
 
@@ -24,7 +24,7 @@ const integrantes = [
         <div>
           <h4>Integrantes</h4>
           <ul>
-            <li v-for="(n, i) in integrantes" :key="i" :class="{ pending: !n }">{{ n || 'Por confirmar' }}</li>
+            <li v-for="n in integrantes" :key="n">{{ n }}</li>
           </ul>
         </div>
         <div>

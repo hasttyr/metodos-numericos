@@ -15,7 +15,7 @@ App estática (Vite + Vue 3 + Three.js + Plotly.js + KaTeX), sin backend. Explic
 | 7 · Física | Invariantes (traza, hermiticidad) contra positividad; comparación en vivo de los 6 métodos |
 | 8 · Validación | Soluciones analíticas, QuTiP, laboratorio contra marco rotante, JS contra Python |
 | 9 · Ingeniería | Mapa P(T₁, T₂), bisección contra secante, modelo de mínimos cuadrados, sensibilidad a la calibración |
-| 10 · Preguntas | Preguntas de sustentación con respuesta |
+| 10 · Discusión | Preguntas clave sobre los métodos, respondidas con los resultados |
 
 ## Código
 

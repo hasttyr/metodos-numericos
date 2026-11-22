@@ -4,7 +4,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 const LINKS = [
   ['simulacion', 'Simulador'], ['modelo', 'Modelo'], ['metodos', 'Métodos'], ['estabilidad', 'Estabilidad'],
   ['convergencia', 'Convergencia'], ['eficiencia', 'Eficiencia'], ['fisica', 'Física'], ['validacion', 'Validación'],
-  ['ingenieria', 'Ingeniería'], ['preguntas', 'Preguntas'], ['referencias', 'Referencias'],
+  ['ingenieria', 'Ingeniería'], ['preguntas', 'Discusión'], ['referencias', 'Referencias'],
 ]
 const active = ref('simulacion')
 let obs
